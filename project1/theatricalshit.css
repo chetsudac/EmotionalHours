@@ -1,0 +1,102 @@
+html {
+    margin: 0;
+    background: #191919;
+}
+
+.frame {
+    margin-top: 5vh;
+    margin-left: 5vw;
+    width: 90vw;
+    height: 90vh;
+    z-index: 5;
+    position: fixed;
+    object-fit: cover;
+    border-radius: 120px;
+    background: #D9D9D9;
+    filter: blur(30px);
+}
+
+.frame {
+    animation: blinker .8s linear infinite;
+  }
+  
+  @keyframes blinker {
+    55% {
+      opacity: 55%;
+    }
+  }
+
+body {
+    color: #404040;
+}
+
+.content-container {
+    width: 100vw;
+    height: 85vh;
+    display: flex;
+}
+
+.content {
+    font-family: "Spline Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+    display: inline-block;
+    width: 60vw;
+    height: 100vh;
+    margin-left: 20vw;
+    padding-top: 220px;
+    z-index: 7;
+    position: fixed;
+    object-fit: cover;
+    text-align: justify;
+    filter: blur(1px);
+}
+
+.text-container {
+    width: 100%;
+    height: 50px;
+    display: grid;
+    align-items:center;
+  }
+
+  .text-navigation {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    display: grid;
+    text-align: center;
+    z-index: 9;
+    position: fixed;
+    object-fit: cover;
+    width: 100vw;
+    height: 10vh;
+    text-transform: uppercase;
+    filter: blur(1px);
+  }
+
+a {
+    text-decoration: none;
+    color: #404040;;
+}
+
+.content-highlight {
+    font-size: 75px;
+    text-align: center;
+}
+
+.content-highlight:hover {
+  font-style: italic;
+  animation: blinker .3s linear infinite;
+}
+
+.text-navigation:hover {
+  font-style: italic;
+  animation: blinker .3s linear infinite;
+  font-size: 30px;
+}

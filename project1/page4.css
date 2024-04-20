@@ -1,0 +1,154 @@
+html {
+    width: 100vw; 
+    height: 100vh;
+    margin: 0;
+    background: #191919;
+}
+
+body {
+    color: #d9d9d9;
+} 
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.title {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110px;
+    text-transform: uppercase;
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: block;
+    text-align: center;
+    margin-top: 220px;
+    height: fit-content;
+    animation: fadeInOut 3s linear;
+}
+
+@keyframes fadeInOut {
+  0% { opacity: 0; color: #d9d9d9;}
+  50% { opacity: 0.5; color: #d9d9d9;}
+  100% { opacity: 1; color: #d9d9d9;}
+}
+
+.scroll-container{
+  border-top: 3px solid #d9d9d9;
+  border-bottom: 3px solid #d9d9d9;
+  height:50vh;
+  width: 50vw;
+  margin-left: 25vw;
+  margin-top: 25vh;
+  background-color: #191919;
+  overflow: hidden;
+}
+
+.scroll-content {
+    color: #d9d9d9;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: "Spline Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 60px;
+    overflow: hidden;
+}
+
+.scroll-content {
+    /* animation properties */
+    -moz-transform: translateY(100%);
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    
+    -moz-animation: my-animation 45s linear infinite;
+    -webkit-animation: my-animation 45s linear infinite;
+    animation: my-animation 45s linear infinite;
+    animation-play-state: running;
+     }
+     
+     /* for Firefox */
+     @-moz-keyframes my-animation {
+       from { -moz-transform: translateY(20%); }
+       to { -moz-transform: translateY(-100%); }
+     }
+     
+     /* for Chrome */
+     @-webkit-keyframes my-animation {
+       from { -webkit-transform: translateY(20%); }
+       to { -webkit-transform: translateY(-100%); }
+     }
+     
+     @keyframes my-animation {
+       from {
+         -moz-transform: translateY(20%);
+         -webkit-transform: translateY(20%);
+         transform: translateY(20%);
+       }
+       to {
+         -moz-transform: translateY(-100%);
+         -webkit-transform: translateY(-100%);
+         transform: translateY(-100%);
+       }
+     } 
+
+     .button-container {
+      width: 100%;
+      height: 50px;
+      display: block;
+      margin-top: 20vh; 
+    }
+  
+    .button {
+      font-family: 'Kulim Park', sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 30px;
+      display: grid;
+      text-align: center;
+    }
+  
+    a {
+      color:#d9d9d9;
+      text-decoration: none;
+    }
+    
+    a:visited {color:#d9d9d9; text-decoration: none;}
+    
+    
+    a:hover {
+      text-decoration: underline 3px solid #d9d9d9;
+      
+    }
+  
+
+    .scroll-content:hover {
+      color: #191919;
+      text-align: center;
+      text-transform: uppercase;
+      font-family: "Spline Sans";
+      font-size: 40px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 60px;
+      overflow: hidden;
+      background-color: #d9d9d9;
+  }
+
+  .scroll-container:hover{
+    border-top: 3px solid #d9d9d9;
+    border-bottom: 3px solid #d9d9d9;
+    height:50vh;
+    width: 50vw;
+    margin-left: 25vw;
+    margin-top: 25vh;
+    background-color: #d9d9d9;
+    overflow: hidden;
+  }

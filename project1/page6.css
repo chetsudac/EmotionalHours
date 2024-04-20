@@ -1,0 +1,128 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #191919;
+    color: #d9d9d9;
+}
+
+body {
+    font-family: "Spline Sans";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: justify;
+    text-transform: uppercase;
+}
+
+.container-body {
+    width: 200%;
+    display: inline-flex;
+
+}
+
+.container {
+    width: 100vw;
+    height: 200%;
+    display: flex;
+    padding: 50px; 
+}
+
+#paragraph {
+  border-bottom: 3px solid #d9d9d9;
+  width: 70vw;
+}
+
+.trace-one, .trace-two, .trace-three, .trace-four {
+    margin-top: 100vh;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 10px;
+    text-transform: uppercase;
+    line-height: 60px;
+    letter-spacing: 15px;
+    text-align: justify;
+    transition: 8s;
+    color: transparent;
+}
+
+.trace-one:hover, .trace-two:hover, .trace-three:hover, .trace-four:hover {
+  letter-spacing: normal;
+  color: #d9d9d9;
+  transition: 4s;
+}
+
+.trace-one {
+  margin-top: 90vh;
+}
+
+
+.trace-two {
+  margin-top: 50vh;
+}
+
+.trace-three {
+  margin-top: 40vh;
+}
+
+.trace-four {
+  margin-top: 80vh;
+}
+
+.button-container {
+    width: 100%;
+    height: 50px;
+    display: block;
+    margin-left: 100%;
+    border-top: 3px solid #d9d9d9;
+  }
+
+  .button {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: grid;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  a {
+    color:#404040;
+    text-decoration: none;
+  }
+  
+  a:visited {color:#d9d9d9; text-decoration: none;}
+  
+  
+  a:hover {
+    text-decoration: underline 3px solid #d9d9d9;
+    
+  }
+
+.title-container {
+  width: 30vw;
+  height: 200%;
+  height:fit-content;
+  display:flex;
+  flex-direction: column;
+}
+
+.title {
+  height: 200%;
+  font-family: 'Kulim Park', sans-serif;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  display:grid;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 180px;
+  border-bottom: 3px solid #d9d9d9;
+  padding-bottom: 50px;
+}
+
+

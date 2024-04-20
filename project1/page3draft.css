@@ -1,0 +1,41 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background: #D9D9D9;
+    color: #404040;
+}
+
+.container {
+    justify-items:center;
+    flex-wrap: wrap;
+    display: flex; 
+    width: 50vw; 
+    align-items: center;
+    padding: 10px;
+}
+
+.frames {
+    width: 8vw;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-around;
+    text-align: justify;
+}
+
+.contents {
+    font-family: 'Spline Sans', sans-serif;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 5px;
+}
+
+.contents:hover {
+    line-height: normal;
+}
+
+a {
+        text-decoration: none;
+        color: #404040;
+}

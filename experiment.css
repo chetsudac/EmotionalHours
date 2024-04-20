@@ -1,0 +1,80 @@
+html {
+    margin: 0;
+    animation: bgColor-changed 15000ms linear infinite;
+    background-color: radial-gradient(circle, rgba(229,238,174,1) 0%, rgba(148,187,233,1) 100%);
+}
+
+body {
+    color: palevioletred;
+    text-transform: uppercase;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 90px;
+}
+
+@keyframes bgColor-changed {
+  0% {background-color: darkcyan}
+  25% {background-color: #DA400B}
+  50% {background-color: #E8AE47}
+  75% {background-color: slateblue}
+  100% {background-color: darkcyan}
+} 
+
+.light{
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--x) var(--y) , transparent 10%, palevioletred 80%);
+}
+
+.part1 {
+  width: 100vw;
+  height: 250px;
+  display:block;
+  position: relative;
+}
+
+.part2 {
+  display:block;
+  width: 100vw;
+  height: 300px;
+  position: relative;
+}
+
+.part1:hover, .part2:hover {
+  font-style: italic;
+}
+
+.marquee {
+  margin: 0 auto;
+}
+
+a {
+  color:palevioletred;
+  text-decoration: none;
+  filter: blur(1.5px);
+  padding: 50px;
+}
+
+a:visited {color:palevioletred; text-decoration: none;}
+
+
+a:hover {
+  border: 2px solid palevioletred;
+  border-radius: 9999px;
+}
+
+h4 {
+  display: flex;
+  width: 100vw;
+  justify-content: center;
+  position: relative;
+  font-size: 30px;
+  font-weight: 100;
+  filter: blur(1px);
+}
+

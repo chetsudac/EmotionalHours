@@ -1,0 +1,108 @@
+html {
+  margin: 0;
+  background: #D9D9D9; 
+}
+
+body {
+  margin: 0;
+}
+
+.container {
+  position: relative;
+}
+
+.content-container {
+    display: inline;
+    align-items: center;
+}
+
+.content-life, .content-poetry, .content-paul, .content-paul--last {
+    overflow: hidden;
+    color: #404040;
+    font-family: "Spline Sans";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100px;
+    text-transform: uppercase;
+    text-align: left;
+  }
+
+.content-poetry, .content-paul--last { 
+    text-align: right;
+    padding-left: 10vw;
+}
+
+.content-life, .content-paul {
+    padding-right: 10vw;
+}
+
+  .button-container {
+    width: 100%;
+    height: 50px;
+    display: block;
+    border-top: 3px solid #404040;
+  }
+
+  .button {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    display: grid;
+    text-align: center;
+    padding-top: 20px;
+  }
+
+  a {
+    color:#404040;
+    text-decoration: none;
+  }
+  
+  a:visited {color:#404040; text-decoration: none;}
+  
+  
+  a:hover {
+    text-decoration: underline 3px solid #404040;
+    
+  }
+
+  span {
+    font-size: 100px;
+  }
+
+  .hover {
+    color: transparent;
+    animation: ease-in-out;
+    transition: 8s;
+  }
+
+  .hover:hover {
+    color: #404040;
+    padding: 10px;
+    transition: 2s;
+  }
+
+  .title-container {
+    width: 100%;
+    height: 60px;
+    display: block; 
+    border-bottom: 3px solid #404040;
+  }
+
+  .title {
+    font-family: 'Kulim Park', sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    display: flex;
+    justify-content:space-between;
+    text-align: center;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-transform:uppercase;
+    color:#404040;
+  }
