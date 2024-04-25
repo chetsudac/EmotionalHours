@@ -10,6 +10,7 @@ body {
     font-weight: 100;
     font-style: normal;
     font-size: 90px;
+
     margin: 0;
     padding: 0;
     height: 100vh;
@@ -18,7 +19,7 @@ body {
 
 .head-container {
   display: flex;
-  margin: 3vw;
+  padding: 1vw;
     position: relative;
     font-size: 30px;
     font-weight: 100;
@@ -40,6 +41,7 @@ body {
     display: flex;
     width: 100vw;
     justify-content: left;
+    padding-left: 2.5vw;
     position: relative;
     font-size: 30px;
     font-weight: 100;
