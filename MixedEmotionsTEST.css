@@ -1,0 +1,59 @@
+html {
+    margin: 0;
+    animation: bgColor-changed 15000ms linear infinite;
+}
+
+body {
+    color: white;
+    text-transform: uppercase;
+    font-family: "Instrument Serif", serif;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 20px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+ 
+.light{
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    background: radial-gradient(circle at var(--x) var(--y) , rgb(255, 255, 255) 10%, transparent 70%);
+    mix-blend-mode:exclusion;
+  }
+
+ h4 {
+    display: flex;
+    width: 100vw;
+    justify-content: left;
+    padding-left: 2.5vw;
+    position: relative;
+    font-size: 30px;
+    font-weight: 100;
+    filter: blur(.5px);
+  }
+
+  .random-data {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    font-size: 100px;
+    filter: blur(.5px);
+  }
+
+  h2 {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    font-size: 50px;
+    font-weight: 100;
+    filter: blur(.5px);
+  }
