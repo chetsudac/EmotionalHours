@@ -7,9 +7,9 @@ html {
 body {
     color: #DB7093;
     text-transform: uppercase;
-    font-family: "Instrument Serif", serif;
-    font-weight: 100;
+    font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
+    font-weight: 500;
     font-size: 90px;
 }
 
@@ -75,6 +75,5 @@ h4 {
   justify-content: center;
   position: relative;
   font-size: 30px;
-  font-weight: 100;
   filter: blur(1px);
 }

@@ -11,7 +11,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
 
   </head>
   <body>
@@ -19,7 +19,17 @@
     <main>
       <h4 id=dateTime>clock</h4>
 
-      <div id="data-container"></div>
+      <div id="data-container">
+        <div id="random-data1" class="random-data">
+            <!-- Random item 1 will be displayed here -->
+        </div>
+        <div id="random-data2" class="random-data">
+            <!-- Random item 2 will be displayed here -->
+        </div>
+        <div id="random-data3" class="random-data">
+            <!-- Random item 3 will be displayed here -->
+        </div>
+    </div>
 
       <div class="light">
         <script type="text/javascript">
@@ -30,22 +40,7 @@
                 pos.style.setProperty('--y',e.
                 clientY + 'px')})
         </script>
-
-</div>
-  <div id="lyrics" class="flex-container"></div>
-</div>
-
-<div id="data-container">
-    <div id="random-data1" class="random-data">
-        <!-- Random item 1 will be displayed here -->
-    </div>
-    <div id="random-data2" class="random-data">
-        <!-- Random item 2 will be displayed here -->
-    </div>
-    <div id="random-data3" class="random-data">
-        <!-- Random item 3 will be displayed here -->
-    </div>
-</div>
+      </div>
  
     </main>
 

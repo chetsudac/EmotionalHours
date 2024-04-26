@@ -36,18 +36,13 @@ async function fetchJSONData() {
     }
 }
 
-// Function to randomly select data
-function getRandomData(data, count) {
-    const randomItems = [];
-    const dataCopy = [...data]; // Create a copy of the original data array
-
-    for (let i = 0; i < count; i++) {
-        const randomIndex = Math.floor(Math.random() * dataCopy.length);
-        randomItems.push(dataCopy[randomIndex]);
-        dataCopy.splice(randomIndex, 1); // Remove the selected item from the copy to avoid duplicates
+// Function to shuffle array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
     }
-
-    return randomItems;
+    return array;
 }
 
 // Function to display randomly selected data
@@ -59,24 +54,21 @@ async function displayRandomData() {
         return;
     }
 
-    const randomData1 = getRandomData(jsonData, 1)[0];
-    const randomData2 = getRandomData(jsonData, 1)[0];
-    const randomData3 = getRandomData(jsonData, 1)[0];
-
+    const shuffledData = shuffleArray(jsonData);
+    
     // Display randomly selected data on the website
     document.getElementById('random-data1').innerHTML = `
-        <h2> " ${randomData1.Lyrics} " </h2>
+        <h2> " ${shuffledData[0].Lyrics} " </h2>
     `;
 
     document.getElementById('random-data2').innerHTML = `
-        <h2> " ${randomData2.Lyrics} " </h2>
+        <h2> " ${shuffledData[1].Lyrics} " </h2>
     `;
 
     document.getElementById('random-data3').innerHTML = `
-        <h2> " ${randomData3.Lyrics} " </h2>
+        <h2> " ${shuffledData[2].Lyrics} " </h2>
     `;
 }
 
 // Call the displayRandomData function to initiate the process
 displayRandomData();
-
