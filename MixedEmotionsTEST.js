@@ -69,6 +69,14 @@ async function displayRandomData() {
     document.getElementById('random-data3').innerHTML = `
         <h2>"${shuffledData[2].Lyrics}"</h2>
     `;
+    
+    document.getElementById('random-data4').innerHTML = `
+        <h2>"${shuffledData[3].Lyrics}"</h2>
+    `;
+
+    document.getElementById('random-data5').innerHTML = `
+        <h2>"${shuffledData[4].Lyrics}"</h2>
+    `;
 }
 
 // Call the displayRandomData function to initiate the process
