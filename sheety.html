@@ -19,17 +19,17 @@
     <main>
       <h4 id=dateTime>clock</h4>
 
-      <div id="data-container"></div>
-
-      <div class="light">
-        <script type="text/javascript">
-            var pos = document.documentElement;
-            pos.addEventListener('mousemove', e =>
-                {pos.style.setProperty('--x',e.
-                clientX + 'px')
-                pos.style.setProperty('--y',e.
-                clientY + 'px')})
-        </script>
+      <div class="slider-container">
+        <input type="range" class="slider" min="1" max="5" value="1" id="rangeSlider">
+    </div>
+    <div class="content">
+        <div id="section1" class="section active">Section 1 Content</div>
+        <div id="section2" class="section">Section 2 Content</div>
+        <div id="section3" class="section">Section 3 Content</div>
+        <div id="section4" class="section">Section 4 Content</div>
+        <div id="section5" class="section">Section 5 Content</div>
+    </div>
+    
  
     </main>
 

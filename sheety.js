@@ -51,3 +51,22 @@ console.log("hello again");
 
 }
 
+
+document.addEventListener("DOMContentLoaded", function() {
+    const rangeSlider = document.getElementById('rangeSlider');
+    const sections = document.querySelectorAll('.section');
+
+    // Display the first section when the page loads
+    sections[0].classList.add('active');
+
+    rangeSlider.addEventListener('input', function() {
+        const value = parseInt(this.value);
+        sections.forEach((section, index) => {
+            if (index === value - 1) {
+                section.classList.add('active');
+            } else {
+                section.classList.remove('active');
+            }
+        });
+    });
+});

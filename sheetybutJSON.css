@@ -13,7 +13,6 @@ body {
 
     margin: 0;
     padding: 0;
-    height: 100vh;
     width: 100vw;
 }
 
@@ -58,8 +57,7 @@ body {
 .flex-container {
     text-align:left;
     display: flex;
-    flex-direction:row;
-    max-height: 100vh;
+    flex-direction:column;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
   font-weight: 500;

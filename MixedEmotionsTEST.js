@@ -16,10 +16,11 @@ if (hour < 12) {
   body.style.backgroundColor = 'lightblue';
 } else if (hour < 16) {
   body.style.background = "linear-gradient(to bottom, #7890E4, #E78840)";
+} else if (hour < 22) {
+    body.style.background = "linear-gradient(to bottom, #040918, #93B6CC)";
 } else {
   body.style.background = "linear-gradient(to bottom, #11114D, #FFAD62)";
 }
-
 
 // JSON data file URL
 const jsonDataUrl = 'sheetybutJSON.json';
@@ -55,20 +56,38 @@ async function displayRandomData() {
     }
 
     const shuffledData = shuffleArray(jsonData);
-    
-    // Display randomly selected data on the website
+
+    // Update the content of existing div elements with new data
     document.getElementById('random-data1').innerHTML = `
-        <h2> " ${shuffledData[0].Lyrics} " </h2>
+        <h2>"${shuffledData[0].Lyrics}"</h2>
     `;
 
     document.getElementById('random-data2').innerHTML = `
-        <h2> " ${shuffledData[1].Lyrics} " </h2>
+        <h2>"${shuffledData[1].Lyrics}"</h2>
     `;
 
     document.getElementById('random-data3').innerHTML = `
-        <h2> " ${shuffledData[2].Lyrics} " </h2>
+        <h2>"${shuffledData[2].Lyrics}"</h2>
     `;
 }
 
 // Call the displayRandomData function to initiate the process
 displayRandomData();
+
+// Create and append button dynamically
+const button = document.createElement('button');
+button.textContent = 'Generate Random Data';
+button.addEventListener('click', displayRandomData);
+button.style.padding = '10px 20px';
+button.style.backgroundColor = 'white';
+button.style.color = 'black';
+button.style.border = 'none';
+button.style.borderRadius = '30px';
+button.style.cursor = 'pointer';
+button.style.fontSize = '20px';
+button.style.display = 'block'; // Ensures the button takes up the full width
+button.style.margin = 'auto'; // Centers the button horizontally
+
+document.body.appendChild(button);
+
+

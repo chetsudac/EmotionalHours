@@ -48,7 +48,8 @@ body {
   }
 
   #data-container {
-    font-size: 30px;
+    font-size: 25px;
+    width: 50vw;
   }
 
   h2 {
@@ -60,3 +61,4 @@ body {
     font-weight: 500;
     filter: blur(.5px);
   }
+
