@@ -29,34 +29,42 @@ body {
  h4 {
     display: flex;
     width: 100vw;
-    justify-content: left;
+    justify-content: center;
     padding-left: 2.5vw;
     position: relative;
-    font-size: 30px;
+    font-size: 25px;
     filter: blur(.5px);
   }
 
   .random-data {
     display: flex;
     width: 100vw;
-    text-align: center;
+    height: 15vh;
     justify-content: center;
+    padding-left: 10vw;
+    padding-right: 10vw;
     position: relative;
     filter: blur(.5px);
+
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
+    font-size: 30px;
+    line-height: 50px;
   }
 
-  #data-container {
-    font-size: 25px;
-    width: 50vw;
+#data-container {
+    width: 40vw;
+    text-align: right;
+  }
+
+#random-data1, #random-data3, #random-data5 {
+    text-align: left;
+    justify-content: left;
   }
 
   h2 {
-    display: flex;
+    display: inline-block;
     width: 100vw;
-    justify-content: center;
-    text-align: center;
     position: relative;
     font-weight: 500;
     filter: blur(.5px);

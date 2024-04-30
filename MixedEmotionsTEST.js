@@ -76,7 +76,7 @@ displayRandomData();
 
 // Create and append button dynamically
 const button = document.createElement('button');
-button.textContent = 'Generate Random Data';
+button.textContent = 'REMIX';
 button.addEventListener('click', displayRandomData);
 button.style.padding = '10px 20px';
 button.style.backgroundColor = 'white';
