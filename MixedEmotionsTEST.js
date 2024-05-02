@@ -98,4 +98,11 @@ button.style.margin = 'auto'; // Centers the button horizontally
 
 document.body.appendChild(button);
 
+const audio = new Audio("./assets/tape-insert.mp3");
+const buttons = document.querySelectorAll("button");
 
+buttons.forEach(button => {
+  button.addEventListener("click", () => {
+    audio.play();
+  });
+});
