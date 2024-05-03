@@ -1,25 +1,29 @@
 html {
-    margin: 0;
-    animation: bgColor-changed 15000ms linear infinite;
-    background-color: radial-gradient(circle, rgba(229,238,174,1) 0% , rgba(148,187,233,1) 100%);
+  margin: 0;
+  animation: bgColor-changed 15000ms linear infinite;
 }
 
 body {
-    color: #DB7093;
-    text-transform: uppercase;
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 90px;
+  color: black;
+  background-color: cornflowerblue;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
 }
 
-@keyframes bgColor-changed {
-  0% {background-color: #008B8B}
-  25% {background-color: #DA400B}
-  50% {background-color: #E8AE47}
-  75% {background-color: slateblue}
-  100% {background-color: #008B8B}
-} 
+/* Style for the fade effect */
+body {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+/* Style to hide the body while transitioning */
+body.fade-out {
+  opacity: 0;
+}
 
 .light{
   position:fixed;
@@ -28,15 +32,54 @@ body {
   width: 100%;
   height: 100%;
   pointer-events: none;
-  background: radial-gradient(circle at var(--x) var(--y) , white 20%, transparent 80%);
-  mix-blend-mode: difference;
+  background: radial-gradient(circle at var(--x) var(--y) , rgb(255, 255, 255) 10%, transparent 70%);
+  mix-blend-mode:exclusion;
+} 
+
+h4 {
+  display: flex;
+  position: relative;
+  font-size: 20px;
+  filter: blur(.5px);
+  height: 20px;
+  font-weight: 600;
 }
+
+.clock-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: auto;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.top-container {
+  display: inline-flex;
+  position: relative;
+  width: 100vw;
+  justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: auto;
+  height: 25px;
+  margin-bottom: 5vh;
+}
+
+
 
 .part1 {
   width: 100vw;
-  height: 250px;
+  height: 300px;
   display:block;
   position: relative;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 90px;
+  font-weight: 900;
 }
 
 .part2 {
@@ -44,6 +87,10 @@ body {
   width: 100vw;
   height: 250px;
   position: relative;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 90px;
+  font-weight: 900;
 }
 
 .part1:hover, .part2:hover {
@@ -54,22 +101,26 @@ body {
   margin: 0 auto;
 }
 
-a {
+#dateTime {
+  width: 50vw;
+}
+
+-a {
   color:#DB7093;
   text-decoration: none;
   filter: blur(1.5px);
   padding: 50px;
 }
 
-a:visited {color:#DB7093; text-decoration: none;}
+-a:visited {color:#DB7093; text-decoration: none;}
 
 
-a:hover {
+-a:hover {
   border: 2px solid #DB7093;
   border-radius: 9999px;
 }
 
-h4 {
+-h4 {
   display: flex;
   width: 100vw;
   justify-content: center;

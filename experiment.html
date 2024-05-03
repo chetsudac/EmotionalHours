@@ -15,8 +15,46 @@
 
   </head>
   <body>
+
+    <style>
+      /* Style for the fade-in effect */
+      body {
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+      }
+      /* Style to show the body after the transition */
+      body.fade-in {
+          opacity: 1;
+      }
+  </style>
+  <script>
+      // Listen for the page load event
+      window.addEventListener('load', function() {
+          // Add fade-in class to body to initiate the transition
+          document.body.classList.add('fade-in');
+      });
+  </script>
+
+<script>
+      function delay(URL) {
+// Add fade-out class to body to initiate the transition
+document.body.classList.add('fade-out');
+// Redirect after the transition duration (1000ms = 1s)
+setTimeout(function() {
+    window.location.href = URL;
+}, 1000); // Adjust this delay if needed
+}
+</script>
+
+<audio id="eject" src="./assets/eject.mp3"></audio>
+<audio id="mix" src="./assets/tape-insert.mp3"></audio>
+
     <main>
-      <h4 id=dateTime>clock</h4>
+      <div class="top-container">
+        <h4 id=dateTime>clock</h4>
+        <h4><a href="javascript:delay('./sheetybutJSON.html')" onclick="document.getElementById('eject').play()">/ Tracklists</a></h4>
+        <h4><a href="javascript:delay('./MixedEmotionsTEST.html')" onclick="document.getElementById('mix').play()">/ Mixtape</a></h4>
+      </div>
       
       <marquee class="part1"
   direction="up"
@@ -24,7 +62,7 @@
   height="500"
   behavior="alternate"
   style="border:solid transparent;">
-  <marquee behavior="alternate"><a href="sheetybutJSON.html">Emotional</a></marquee>
+  <marquee behavior="alternate">Emotional</marquee>
 </marquee>
 
 <marquee class="part2"
@@ -33,7 +71,7 @@
   height="500"
   behavior="alternate"
   style="border:solid transparent;">
-  <marquee behavior="alternate"><a href="sheetybutJSON.html">Hours</a></marquee>
+  <marquee behavior="alternate">Hours</marquee>
 </marquee>
 
       <div class="light">

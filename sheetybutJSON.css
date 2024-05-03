@@ -1,62 +1,86 @@
 html {
-    margin: 0;
-    animation: bgColor-changed 15000ms linear infinite;
+  margin: 0;
+  animation: bgColor-changed 15000ms linear infinite;
 }
 
 body {
-    color: white;
-    text-transform: uppercase;
-    font-family: "Instrument Serif", serif;
-    font-weight: 100;
-    font-style: normal;
-    font-size: 90px;
-
-    margin: 0;
-    padding: 0;
-    width: 100vw;
+  color: white;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
 }
- 
+
+#dateTime {
+  width: 50vw;
+}
+
+/* Style for the fade effect */
+body {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+/* Style to hide the body while transitioning */
+body.fade-out {
+  opacity: 0;
+}
+
 .light{
-    position:fixed;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
-    background: radial-gradient(circle at var(--x) var(--y) , rgb(255, 255, 255) 10%, transparent 70%);
-    mix-blend-mode:exclusion;
-  }
+  position:fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  background: radial-gradient(circle at var(--x) var(--y) , rgb(255, 255, 255) 10%, transparent 70%);
+  mix-blend-mode:exclusion;
+}
 
-  h4 {
-    display: flex;
-    width: 100vw;
-    justify-content: left;
-    padding-left: 2.5vw;
-    position: relative;
-    font-size: 30px;
-    font-weight: 100;
-    filter: blur(.5px);
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    font-style: normal;
-    font-weight: 500;
-  }
+h4 {
+  display: flex;
+  position: relative;
+  font-size: 20px;
+  filter: blur(.5px);
+  height: 20px;
+  font-weight: 600;
+}
 
-  .top-container {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    justify-content: space-between;
-    padding-left: 3vw;
-    padding-right: 3vw;
-  }
+.clock-container {
+  display: flex;
+  position: relative;
+  width: 100vw;
+  justify-content: center;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: auto;
+  height: 25px;
+  margin-bottom: 15px;
+}
+
+.top-container {
+  display: inline-flex;
+  position: relative;
+  width: 100vw;
+  justify-content: space-between;
+  padding-left: 3vw;
+  padding-right: 3vw;
+  height: auto;
+  height: 25px;
+  margin-bottom: 5vh;
+}
+
 
 .flex-container {
     text-align:left;
     display: flex;
-    flex-direction:column;
+    flex-direction:row;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
   font-weight: 500;
+  height: 100vh;
   }
 
   div {
@@ -69,3 +93,51 @@ h5{
     width: 400px;
 }
   
+
+
+
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  grid-gap: 10px;
+  height: 100%;
+  align-items: center;
+  justify-content:center;
+}
+
+#one {
+  text-align: center;
+}
+
+#two {
+  text-align: center;
+}
+
+#three {
+  text-align: center;
+}
+
+#four {
+  text-align: center;
+}
+
+#one:hover, #two:hover, #three:hover, #four:hover {
+  text-align: center;
+  font-weight: 900;
+}
+
+.grid-item {
+  color: white;
+  padding: 10px;
+  padding-top: 100px;
+  text-align: center;
+  height: 50vh;
+}
+
+.grid-item:hover {
+  font-style: italic;
+}
+
+
+
