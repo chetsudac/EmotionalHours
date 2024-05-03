@@ -31,13 +31,13 @@ const lyrics = document.getElementById('lyrics');
 
 data.forEach(item => {
     const div = document.createElement('div');
-    const title = document.createElement('h5');
+    const title = document.createElement('p');
 
     title.textContent = item.Lyrics;
 
     div.style.display = "block";
 
-    
+    div.className = "tracks";
     
     div.appendChild(title);
     lyrics.appendChild(div);
@@ -46,4 +46,5 @@ data.forEach(item => {
 })
 
 .catch(error => console.error(error));
+
 

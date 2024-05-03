@@ -4,349 +4,527 @@
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "hearts may change but memories won't",
     "Title": "The Art of Detaching One's Heart",
-    "Artist": "Phum Viphurit, Jenny & The Scallywags"
+    "Artist": "Phum Viphurit, Jenny & The Scallywags",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 2,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "and just maybe enough time will pass",
     "Title": "Always",
-    "Artist": "Daniel Caesar"
+    "Artist": "Daniel Caesar",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 3,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "เหมือนฉากหนึ่งที่ฉันนั้นฝันไป",
     "Title": "เส้นเรื่องเดิม (RERUN)",
-    "Artist": "PP Krit"
+    "Artist": "PP Krit",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 4,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": ", and I'm still on your side",
     "Title": "Every Summertime",
-    "Artist": "NIKI"
+    "Artist": "NIKI",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 5,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "for once I can touch what my heart used to dream of",
     "Title": "For Once in My Life",
-    "Artist": "Stevie Wonder"
+    "Artist": "Stevie Wonder",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 6,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "everything has got its place in time",
     "Title": "Swear It Again",
-    "Artist": "Westlife"
+    "Artist": "Westlife",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 7,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "all I need will be mine if you are here",
     "Title": "Top of the World",
-    "Artist": "Carpenters"
+    "Artist": "Carpenters",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 8,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "โลกใบนี้ก็ยังคงหมุนวนความคิดถึงให้ผ่านมา",
     "Title": "ฤดู",
-    "Artist": "Dept"
+    "Artist": "Dept",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 9,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "baby, we finally reached the end",
     "Title": "We Were Never Really Friends",
-    "Artist": "Bruno Major"
+    "Artist": "Bruno Major",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 10,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "ภาพที่เราจับมือกัน และสัญญาว่าจะไม่ปล่อย",
     "Title": "ยิ้มทั้งน้ำตา (Always)",
-    "Artist": "Billkin"
+    "Artist": "Billkin",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 11,
     "Hours": "1899-12-30T15:00:00.000Z",
     "Lyrics": "อาจเป็นเพียง ภาพสุดท้าย ที่เรานั้นเคยได้มาพบและผูกพัน",
     "Title": "วันเก่า (good old days)",
-    "Artist": "loserpop"
+    "Artist": "loserpop",
+    "Category": "tenAM",
+    "tenAM": 1,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 12,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "ฤดูกาลอบอุ่นแล้ว กลับมาได้ไหม",
     "Title": "ปลายสายรุ้ง",
-    "Artist": "PARADOX"
+    "Artist": "PARADOX",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 13,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "I'll say I'm proud of all that you've done",
     "Title": "The Good Side",
-    "Artist": "Troye Sivan"
+    "Artist": "Troye Sivan",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 14,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "ทุกอย่างช่างดูเหมือนฝัน",
     "Title": "เหมือนเคย (Muen Kei)",
-    "Artist": "Boyd Kosiyabong, Setha Sirachaya"
+    "Artist": "Boyd Kosiyabong, Setha Sirachaya",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 15,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "there'll be times we wanna say goodbye",
     "Title": "Swear It Again",
-    "Artist": "Westlife"
+    "Artist": "Westlife",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 16,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "อ้อนวอนไปกับสายลม ช่วยพัดเธอคืนย้อนมาก่อน",
     "Title": "ฤดู",
-    "Artist": "Dept"
+    "Artist": "Dept",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 17,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "and now you won't love me for a second time",
     "Title": "Save Your Tears",
-    "Artist": "The Weeknd"
+    "Artist": "The Weeknd",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 18,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "cause one day, they won't be around",
     "Title": "Cool",
-    "Artist": "Daniel Caesar"
+    "Artist": "Daniel Caesar",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 19,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "I'm too shy to ask, I'm to proud to lose",
     "Title": "If I Let You Go Lyrics",
-    "Artist": "Westlife"
+    "Artist": "Westlife",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 20,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "our song is ending my voice please remember",
     "Title": "Pluto",
-    "Artist": "Phum Viphurit"
+    "Artist": "Phum Viphurit",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 21,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "and who's gonna take my place?",
     "Title": "Fool Again",
-    "Artist": "Westlife"
+    "Artist": "Westlife",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 22,
     "Hours": "1899-12-30T21:00:00.000Z",
     "Lyrics": "so tell her I know now what I should have said",
     "Title": "Tell Her",
-    "Artist": "Bruno Major"
+    "Artist": "Bruno Major",
+    "Category": "fourPM",
+    "tenAM": 0,
+    "fourPM": 1,
+    "twelveAM": 0,
+    "threeAM": 0
   },
   {
     "ID": 23,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "เธอที่เคยสำคัญ จะยังเป็นคนสำคัญ",
     "Title": "ฉันคือความทรงจำดีๆ ของเธอรึเปล่า",
-    "Artist": "fellow fellow"
+    "Artist": "fellow fellow",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 24,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "I'm dancing with a memory",
     "Title": "Lover’s Moon",
-    "Artist": "Glenn Frey"
+    "Artist": "Glenn Frey",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 25,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "I never knew love like I've known it with you",
     "Title": "I Have Nothing",
-    "Artist": "Whitney Houston"
+    "Artist": "Whitney Houston",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 26,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "someone's gonna thank the stars above",
     "Title": "The One You Love",
-    "Artist": "Glenn Frey"
+    "Artist": "Glenn Frey",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 27,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "this is our last dance together, tonight soon will be long ago",
     "Title": "There Will Never Be Another You",
-    "Artist": "Nat King Cole"
+    "Artist": "Nat King Cole",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 28,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "talked about the summer when we didn't know each other",
     "Title": "Still Got It",
-    "Artist": "Troye Sivan"
+    "Artist": "Troye Sivan",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 29,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "마주보던 그대로 뒷걸음치면서 서로의 안녕을 보아요",
     "Title": "for lovers who hesitate",
-    "Artist": "JANNABI(잔나비)"
+    "Artist": "JANNABI(잔나비)",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 30,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "time I would buy but it's time for goodbye",
     "Title": "Pluto",
-    "Artist": "Phum Viphurit"
+    "Artist": "Phum Viphurit",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 31,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "when you look at me do the voice of angels start to sing?",
     "Title": "Wanna Know",
-    "Artist": "Sabrina Claudio"
+    "Artist": "Sabrina Claudio",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 32,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "things are only almost like they were before",
     "Title": "Before",
-    "Artist": "NIKI"
+    "Artist": "NIKI",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 33,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "something beautiful died too soon",
     "Title": "Oceans & Engines",
-    "Artist": "NIKI"
+    "Artist": "NIKI",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 34,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "แล้ววันหนึ่งตัวฉันควรบอกเธอไหม",
     "Title": "ถ้าเธอได้รู้ ( The Secret )",
-    "Artist": "Safeplanet"
+    "Artist": "Safeplanet",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 35,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "แต่ความเป็นจริงนั้นมีไหมใครที่ทำได้จริงทุกอย่าง",
     "Title": "ใครนิยาม",
-    "Artist": "ETC."
+    "Artist": "ETC.",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 36,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "I guess it's time to go",
     "Title": "Open Arms",
-    "Artist": "SZA"
+    "Artist": "SZA",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 37,
     "Hours": "1899-12-30T05:00:00.000Z",
     "Lyrics": "all my best memories come back clearly to me",
     "Title": "Yesterday Once More",
-    "Artist": "Carpenters, Royal Philharmonic Orchestra"
+    "Artist": "Carpenters, Royal Philharmonic Orchestra",
+    "Category": "twelveAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 1,
+    "threeAM": 0
   },
   {
     "ID": 38,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "ไม่นานที่เคยคุ้น กลับอบอุ่นหัวใจ",
     "Title": "เคย (strangers)",
-    "Artist": "loserpop"
+    "Artist": "loserpop",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   },
   {
     "ID": 39,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "was bound to happen, I suppose, but fuck me, now I really know",
     "Title": "Still Got It",
-    "Artist": "Troye Sivan"
+    "Artist": "Troye Sivan",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   },
   {
     "ID": 40,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "ขอแค่ไม่ลืมเธอไปเท่านั้นพอ",
     "Title": "จดจำ",
-    "Artist": "Only Monday"
+    "Artist": "Only Monday",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   },
   {
     "ID": 41,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "ฉันเองก็เเค่เหงา ในทุกๆ ครั้งที่เข้าไปพลั้งกอด",
     "Title": "Goodbye",
-    "Artist": "Pun"
+    "Artist": "Pun",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   },
   {
     "ID": 42,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "but hearing it from you means much more",
     "Title": "All I Need to Hear",
-    "Artist": "The 1975"
+    "Artist": "The 1975",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   },
   {
     "ID": 43,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "someone's gonna cry when they know they've lost you",
     "Title": "The One You Love",
-    "Artist": "Glenn Frey"
+    "Artist": "Glenn Frey",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   },
   {
     "ID": 44,
     "Hours": "1899-12-30T08:00:00.000Z",
     "Lyrics": "see you walking out the door wonder why it took you so long",
     "Title": "We Find Love",
-    "Artist": "Daniel Caesar"
-  },
-  {
-    "ID": 45,
-    "Hours": "1899-12-30T08:00:00.000Z",
-    "Lyrics": "you do make me hard but she makes me weak",
-    "Title": "Be My Mistake",
-    "Artist": "The 1975"
-  },
-  {
-    "ID": 46,
-    "Hours": "1899-12-30T08:00:00.000Z",
-    "Lyrics": "내겐 내가 없어, 난 자신이 없어 니가 없는 하루 견딜 수가 없어",
-    "Title": "Hug Me (안아줘)",
-    "Artist": "JOONIL JUNG (정준일)"
-  },
-  {
-    "ID": 47,
-    "Hours": "1899-12-30T08:00:00.000Z",
-    "Lyrics": "and it's just as good as I knew it would be",
-    "Title": "K.",
-    "Artist": "Cigarettes After Sex"
-  },
-  {
-    "ID": 48,
-    "Hours": "1899-12-30T08:00:00.000Z",
-    "Lyrics": "push me away, I'll be right here",
-    "Title": "Open Arms",
-    "Artist": "SZA"
-  },
-  {
-    "ID": 49,
-    "Hours": "1899-12-30T08:00:00.000Z",
-    "Lyrics": "ถ้ารู้ว่าครั้งนั้นมันเป็นครั้งสุดท้าย คงทิ้งทุกอย่างเพื่อแลกเธอไว้",
-    "Title": "ถ้ารู้ว่าจะหายไป",
-    "Artist": "Dept"
-  },
-  {
-    "ID": 50,
-    "Hours": "1899-12-30T08:00:00.000Z",
-    "Lyrics": "เพราะเธอไม่กลับ ไม่กลับมามันนานเกินไป",
-    "Title": "พริบตา",
-    "Artist": "Bird Thongchai, Stamp"
+    "Artist": "Daniel Caesar",
+    "Category": "threeAM",
+    "tenAM": 0,
+    "fourPM": 0,
+    "twelveAM": 0,
+    "threeAM": 1
   }
 ]

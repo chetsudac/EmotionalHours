@@ -5,7 +5,8 @@ html {
 
 body {
   color: black;
-  background-color: cornflowerblue;
+  background-image: url("https://images-assets.nasa.gov/image/iss011e11806/iss011e11806~orig.jpg");
+  background-size: cover;
   text-transform: uppercase;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
@@ -127,4 +128,9 @@ h4 {
   position: relative;
   font-size: 30px;
   filter: blur(1px);
+}
+
+img {
+  display: block;
+  max-width: 100%;
 }

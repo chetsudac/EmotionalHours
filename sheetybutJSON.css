@@ -74,70 +74,45 @@ h4 {
 
 
 .flex-container {
-    text-align:left;
-    display: flex;
-    flex-direction:row;
-  font-family: "IBM Plex Sans Thai", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  height: 100vh;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align:center;
+  text-align: center;
+}
 
-  div {
-  }
+div {
+  display: inline-flex;
+}
+
+.tracks {
+ height: 25vh;
+ width: 25vw;
+ margin: 30px;
+ padding-top: 60px;
+ display: flex;
+ position: relative;
+  filter: blur(.5px);
+
+}
+
+p {
+  font-weight: 600;
+  font-size: 20px;
+}
   
-h5{
-    font-size: 20px;
-    text-align: left;
-    padding: 50px;
-    width: 400px;
-}
-  
 
-
-
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
-  grid-gap: 10px;
-  height: 100%;
-  align-items: center;
-  justify-content:center;
+.lyrics-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  justify-self: center;
+  padding: 1vw;
 }
 
-#one {
-  text-align: center;
+.lyrics {
+  padding: 5px;
+  background-color: black;
+  border-radius: 5px;
+  line-height: 30px;
 }
-
-#two {
-  text-align: center;
-}
-
-#three {
-  text-align: center;
-}
-
-#four {
-  text-align: center;
-}
-
-#one:hover, #two:hover, #three:hover, #four:hover {
-  text-align: center;
-  font-weight: 900;
-}
-
-.grid-item {
-  color: white;
-  padding: 10px;
-  padding-top: 100px;
-  text-align: center;
-  height: 50vh;
-}
-
-.grid-item:hover {
-  font-style: italic;
-}
-
-
-
