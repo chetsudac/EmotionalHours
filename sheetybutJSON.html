@@ -16,13 +16,47 @@
   </head>
   <body>
 
-    <main>
-      
-<div class="head-container">
-<h4 id=dateTime>clock</h4>
+    <style>
+      /* Style for the fade-in effect */
+      body {
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+      }
+      /* Style to show the body after the transition */
+      body.fade-in {
+          opacity: 1;
+      }
+  </style>
+  <script>
+      // Listen for the page load event
+      window.addEventListener('load', function() {
+          // Add fade-in class to body to initiate the transition
+          document.body.classList.add('fade-in');
+      });
+  </script>
 
-<h4 class="remix"><a href="MixedEmotionsTEST.html">Mixed Emotion</a></h4>
-</div>
+
+<script>
+  function delay(URL) {
+// Add fade-out class to body to initiate the transition
+document.body.classList.add('fade-out');
+// Redirect after the transition duration (1000ms = 1s)
+setTimeout(function() {
+window.location.href = URL;
+}, 1000); // Adjust this delay if needed
+}
+</script>
+
+<audio id="player" src="./assets/tape-insert.mp3"></audio>
+
+    <main>
+      <div class="group-container">
+      <div class="top-container">
+
+        <h4><a href="javascript:delay('./MixedEmotionsTEST.html')" onclick="document.getElementById('player').play()">Mixed Emotions</a></h4>
+        <h4 id=dateTime>clock</h4>
+      </div>
+
 
       <div class="light">
         <script type="text/javascript">
@@ -35,6 +69,7 @@
         </script>
 
 </div>
+      </div>
 
   <div id="lyrics" class="flex-container"></div>
 </div>

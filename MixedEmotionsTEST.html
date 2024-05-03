@@ -16,10 +16,49 @@
   </head>
   <body>
 
-    <main>
-      <h4 id=dateTime>clock</h4>
+    <style>
+      /* Style for the fade-in effect */
+      body {
+          opacity: 0;
+          transition: opacity 1s ease-in-out;
+      }
+      /* Style to show the body after the transition */
+      body.fade-in {
+          opacity: 1;
+      }
+  </style>
+  <script>
+      // Listen for the page load event
+      window.addEventListener('load', function() {
+          // Add fade-in class to body to initiate the transition
+          document.body.classList.add('fade-in');
+      });
+  </script>
 
-      <div id="data-container">
+<script>
+      function delay(URL) {
+// Add fade-out class to body to initiate the transition
+document.body.classList.add('fade-out');
+// Redirect after the transition duration (1000ms = 1s)
+setTimeout(function() {
+    window.location.href = URL;
+}, 1000); // Adjust this delay if needed
+}
+</script>
+
+<audio id="eject" src="./assets/eject.mp3"></audio>
+<audio id="closing" src="./assets/closing.mp3"></audio>
+
+    <main>
+      <div class="clock-container">
+        <h4 id=dateTime>clock</h4>
+      </div>
+      <div class="top-container">
+      <h4><a href="javascript:delay('./experiment.html')" onclick="document.getElementById('closing').play()">Home</a></h4>
+      <h4><a href="javascript:delay('./sheetybutJSON.html')" onclick="document.getElementById('eject').play()">Emotional Hours</a></h4>
+    </div>
+
+      <div class="data-container">
         <div id="random-data1" class="random-data">
             <!-- Random item 1 will be displayed here -->
         </div>

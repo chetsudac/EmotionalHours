@@ -89,12 +89,10 @@ button.addEventListener('click', displayRandomData);
 button.style.padding = '10px 20px';
 button.style.backgroundColor = 'white';
 button.style.color = 'black';
-button.style.border = 'none';
-button.style.borderRadius = '30px';
+button.style.borderRadius = '50px';
 button.style.cursor = 'pointer';
-button.style.fontSize = '20px';
+button.style.fontSize = '16px';
 button.style.display = 'block'; // Ensures the button takes up the full width
-button.style.margin = 'auto'; // Centers the button horizontally
 
 document.body.appendChild(button);
 

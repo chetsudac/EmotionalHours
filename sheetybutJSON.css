@@ -15,15 +15,6 @@ body {
     padding: 0;
     width: 100vw;
 }
-
-.head-container {
-  display: flex;
-  padding: 1vw;
-    position: relative;
-    font-size: 30px;
-    font-weight: 100;
-    filter: blur(.5px);
-}
  
 .light{
     position:fixed;
@@ -49,9 +40,14 @@ body {
     font-style: normal;
     font-weight: 500;
   }
-  
-  .remix {
-    justify-content: right;
+
+  .top-container {
+    display: flex;
+    position: relative;
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
   }
 
 .flex-container {

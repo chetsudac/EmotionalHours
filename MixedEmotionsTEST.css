@@ -7,12 +7,21 @@ body {
     color: white;
     text-transform: uppercase;
     font-family: "IBM Plex Sans Thai", sans-serif;
-  font-style: normal;
-  font-weight: 500;
+    font-style: normal;
     font-size: 20px;
     height: 100vh;
     margin: 0;
     padding: 0;
+}
+
+  /* Style for the fade effect */
+body {
+    opacity: 1;
+    transition: opacity 1s ease-in-out;
+}
+/* Style to hide the body while transitioning */
+body.fade-out {
+    opacity: 0;
 }
  
 .light{
@@ -28,13 +37,37 @@ body {
 
  h4 {
     display: flex;
+    position: relative;
+    font-size: 20px;
+    filter: blur(.5px);
+    height: 20px;
+    font-weight: 600;
+  }
+
+  .clock-container {
+    display: flex;
+    position: relative;
     width: 100vw;
     justify-content: center;
-    padding-left: 2.5vw;
-    position: relative;
-    font-size: 25px;
-    filter: blur(.5px);
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: auto;
+    height: 25px;
+    margin-bottom: 15px;
   }
+
+  .top-container {
+    display: inline-flex;
+    position: relative;
+    width: 100vw;
+    justify-content: space-between;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    height: auto;
+    height: 25px;
+    margin-bottom: 15px;
+  }
+  
 
   .random-data {
     display: flex;
@@ -48,11 +81,12 @@ body {
 
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 30px;
-    line-height: 50px;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: 300;
   }
 
-#data-container {
+.data-container {
     width: 40vw;
     text-align: right;
   }
@@ -63,10 +97,45 @@ body {
   }
 
   h2 {
-    display: inline-block;
+    display: block;
     width: 100vw;
     position: relative;
-    font-weight: 500;
+    font-weight: 600;
     filter: blur(.5px);
   }
 
+ /* Style the button */
+button {
+  margin:auto;
+  margin-top: 2vh;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  filter: blur(.5px);
+}
+
+#random-data1 {
+    animation: blinker 4s linear infinite;
+}
+
+#random-data2 {
+  animation: blinker 6s linear infinite;
+}
+
+#random-data3 {
+  animation: blinker 5s linear infinite;
+}
+
+#random-data4 {
+  animation: blinker 5.5s linear infinite;
+}
+
+#random-data5 {
+  animation: blinker 4.5s linear infinite;
+}
+
+@keyframes blinker {
+  0% { font-size: 100%; opacity: 1; filter: blur(0px)}
+  50% { font-size: 103%; opacity: .3; filter: blur(1px)}
+  100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
