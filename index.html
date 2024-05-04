@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display NASA Image Background</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .overlay-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100vw;
+            height: 100vh;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+    <div class="background-container">
+        <img class="background-image" id="background-image">
+        <div class="overlay-content">
+            <h1>Overlay Text</h1>
+            <p>This is some overlay content.</p>
+        </div>
+    </div>
+
+    <script>
+        // List of NASA image IDs
+        const imageIds = ['ID_1', 'ID_2', 'ID_3']; // Add your image IDs here
+
+        // Function to fetch and display a random image
+        function displayRandomImage() {
+            // Randomly select an image ID from the list
+            const randomIndex = Math.floor(Math.random() * imageIds.length);
+            const randomId = imageIds[randomIndex];
+
+            // NASA Images API endpoint
+            const apiUrl = `https://images-api.nasa.gov/asset/${randomId}`;
+
+            // Make a GET request to the API
+            fetch(apiUrl)
+                .then(response => response.json())
+                .then(data => {
+                    // Extract the URL of the image from the response
+                    const imageUrl = data.collection.items[0].href;
+
+                    // Set image source for background image
+                    document.getElementById('background-image').src = imageUrl;
+                })
+                .catch(error => {
+                    console.error('Error fetching image:', error);
+                });
+        }
+
+        // Initial display of a random image
+        displayRandomImage();
+    </script>
+</body>
+</html>
+
+

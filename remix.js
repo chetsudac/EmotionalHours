@@ -23,7 +23,7 @@ if (hour < 12) {
 }
 
 // JSON data file URL
-const jsonDataUrl = 'sheetybutJSON.json';
+const jsonDataUrl = 'data.json';
 
 // Function to fetch JSON data
 async function fetchJSONData() {

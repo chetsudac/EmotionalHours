@@ -4,10 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Shuffle Mixed DRAFT</title>
+    <title>Home</title>
 
     <link rel="stylesheet" type="text/css" href="./reset.css" />
-    <link rel="stylesheet" type="text/css" href="./MixedEmotionsTEST.css" />
+    <link rel="stylesheet" type="text/css" href="./home.css" />
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -47,34 +47,32 @@ setTimeout(function() {
 </script>
 
 <audio id="eject" src="./assets/eject.mp3"></audio>
-<audio id="closing" src="./assets/closing.mp3"></audio>
+<audio id="mix" src="./assets/tape-insert.mp3"></audio>
 
     <main>
-
       <div class="top-container">
-      <h4 id=dateTime>clock</h4>
-      <h4><a href="javascript:delay('./sheetybutJSON.html')" onclick="document.getElementById('eject').play()">/ Tracklist</a></h4>
-      <h4><a href="javascript:delay('./experiment.html')" onclick="document.getElementById('closing').play()">Home</a></h4>
-    </div>
-
-      <div class="data-container">
-        <div id="random-data1" class="random-data">
-            <!-- Random item 1 will be displayed here -->
-        </div>
-        <div id="random-data2" class="random-data">
-            <!-- Random item 2 will be displayed here -->
-        </div>
-        <div id="random-data3" class="random-data">
-            <!-- Random item 3 will be displayed here -->
-        </div>
-        <div id="random-data4" class="random-data">
-          <!-- Random item 3 will be displayed here -->
-        </div>
-        <div id="random-data5" class="random-data">
-          <!-- Random item 3 will be displayed here -->
-        </div>
+        <h4 id=dateTime>clock</h4>
+        <h4><a href="javascript:delay('./tracklist.html')" onclick="document.getElementById('eject').play()">/ Tracklists</a></h4>
+        <h4><a href="javascript:delay('./remix.html')" onclick="document.getElementById('mix').play()">/ Mixtape</a></h4>
+      </div>
       
-    </div>
+      <marquee class="part1"
+  direction="up"
+  width="1450"
+  height="500"
+  behavior="alternate"
+  style="border:solid transparent;">
+  <marquee behavior="alternate">Emotional</marquee>
+</marquee>
+
+<marquee class="part2"
+  direction="down"
+  width="500"
+  height="500"
+  behavior="alternate"
+  style="border:solid transparent;">
+  <marquee behavior="alternate">Hours</marquee>
+</marquee>
 
       <div class="light">
         <script type="text/javascript">
@@ -85,10 +83,12 @@ setTimeout(function() {
                 pos.style.setProperty('--y',e.
                 clientY + 'px')})
         </script>
+
       </div>
+
+
  
     </main>
-
-    <script type="text/javascript" src="./MixedEmotionsTEST.js" defer></script>
+    <script type="text/javascript" src="./home.js" defer></script>
   </body>
 </html>  

@@ -21,7 +21,7 @@ if (hour < 12) {
 }
 
 
-fetch('sheetybutJSON.json')
+fetch('data.json')
 .then(response => response.json())
 .then(data => {
 
