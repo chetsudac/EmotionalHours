@@ -106,10 +106,11 @@ h4 {
   grid-template-rows: 1fr 1fr;
   height: 100%;
   width: 100vw;
+  filter: blur(.8px);
 }
 
 .grid-item {
-  height: 50vh;
+  height: 48vh;
   overflow: auto;
   display: inline;
   align-items: center;
@@ -123,4 +124,20 @@ h4 {
 .grid-item {
 -ms-overflow-style: none;  
 scrollbar-width: none; 
+}
+
+#hour-1 {
+  background: linear-gradient(#e66465, #9198e5);
+}
+
+#hour-2 {
+  background: linear-gradient(black, white);
+}
+
+#hour-3 {
+  background: linear-gradient(brown, cornflowerblue);
+}
+
+#hour-4 {
+  background: linear-gradient(pink, plum);
 }
