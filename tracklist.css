@@ -12,6 +12,7 @@ body {
   width: 100vw;
   margin: 0;
   padding: 0;
+  overflow: auto;
 }
 
 #dateTime {
@@ -125,7 +126,16 @@ p {
 
 .lyrics {
   padding: 5px;
-  background-color: black;
   border-radius: 5px;
-  line-height: 30px;
+  line-height: 50px;
+}
+
+.hours {
+  padding: 5px;
+  border-radius: .5rem;
+  line-height: 50px;
+  background-color: black;
+  width: 450px;
+  height: 60px;
+  justify-content: center;
 }
