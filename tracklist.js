@@ -21,30 +21,3 @@ if (hour < 12) {
 }
 
 
-fetch('data.json')
-.then(response => response.json())
-.then(data => {
-
-const lyrics = document.getElementById('lyrics');
-
-    const buttonReset = document.getElementById('all');
-
-data.forEach(item => {
-    const div = document.createElement('div');
-    const title = document.createElement('p');
-
-    title.textContent = item.Lyrics;
-
-    div.style.display = "block";
-
-    div.className = "tracks";
-    
-    div.appendChild(title);
-    lyrics.appendChild(div);
-    });
-
-})
-
-.catch(error => console.error(error));
-
-
