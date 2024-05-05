@@ -173,7 +173,7 @@ img {
 @media (max-width: 480px) {
   .part1 {
     width: 100vw;
-    height: 400px;
+    height: 45vh;
     display:block;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
@@ -186,7 +186,7 @@ img {
   .part2 {
     display:block;
     width: 100vw;
-    height: 400px;
+    height: 35vh;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
