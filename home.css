@@ -171,5 +171,28 @@ img {
 
 /* Mobile layout */
 @media (max-width: 480px) {
-
+  .part1 {
+    width: 100vw;
+    height: 400px;
+    display:block;
+    position: relative;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 900;
+    filter: blur(1.5px);
+  }
+  
+  .part2 {
+    display:block;
+    width: 100vw;
+    height: 400px;
+    position: relative;
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-style: normal;
+    font-size: 40px;
+    font-weight: 900;
+    filter: blur(1.5px);
+  }
 }
+
