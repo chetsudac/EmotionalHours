@@ -13,16 +13,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-  /* Style for the fade effect */
-body {
-    opacity: 1;
-    transition: opacity 1s ease-in-out;
-}
-/* Style to hide the body while transitioning */
-body.fade-out {
-    opacity: 0;
-}
  
 .light{
     position:fixed;

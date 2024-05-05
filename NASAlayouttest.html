@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display NASA Image Grid</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .grid-container {
+            display: grid;
+            width: 100vw;
+            height: 100vh;
+        }
+        .grid-item {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-size: cover;
+            background-position: center;
+            transition: opacity 1s ease-in-out;
+        }
+
+        /* Desktop layout (3x3 grid) */
+        @media (min-width: 768px) {
+            .grid-container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+
+        /* Tablet layout (2x3 grid) */
+        @media (max-width: 767px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+
+        /* Mobile layout (2x3 grid) */
+        @media (max-width: 480px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: repeat(3, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container" id="grid-container">
+        <!-- Grid items will be dynamically added here -->
+    </div>
+
+    <script>
+        // Your NASA API key
+        const apiKey = 'eoVXgMJ1VP02Y427y52nkEieKdq6jVtllPm0fWIF';
+
+        // List of NASA image IDs
+        const imageIds = ['iss011e11806', 's62-03248', 's62-03266', 'KSC-20220612-PH-JBS01_0034', 'KSC-2012-3670', 'KSC-2014-3457', 'KSC-20180730-PH_KLS02_0002', 'KSC-20180730-PH_KLS02_0009',
+            'KSC-2014-3456', 'KSC-20191031-PH-GEB01_0003', 'KSC-20191031-PH-GEB01_0002', 'PIA17936', 'KSC-2009-1362', 'KSC-2011-2642', 'KSC-314D-0491_0020', 'KSC-20161215-PH_SWW01_0069',
+            'NHQ202210080001', 'KSC-20200730-PH-KLS01_0001', 'KSC-2012-2382', 'KSC-2012-2404', 'KSC01padig151', 'KSC-2013-2797', 'AFRC2021-0003-18', 'AFRC2018-0287-074', 'AFRC2021-0106-02']; // Add your image IDs here
+
+        // Function to fetch image URLs from NASA API
+        async function fetchImageUrls(imageId) {
+            const apiUrl = `https://images-api.nasa.gov/asset/${imageId}`;
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                const imageUrl = data.collection.items[0].href;
+                return imageUrl;
+            } catch (error) {
+                console.error('Error fetching image URL:', error);
+                return null;
+            }
+        }
+
+        // Function to display images in the grid
+        async function displayImages() {
+            const gridContainer = document.getElementById('grid-container');
+
+            // Clear existing grid items
+            gridContainer.innerHTML = '';
+
+            // Shuffle the image IDs
+            const shuffledImageIds = shuffleArray(imageIds);
+
+            // Determine number of grid columns based on screen size
+            let numColumns;
+            if (window.innerWidth >= 768) {
+                numColumns = 3; // Desktop
+            } else {
+                numColumns = 2; // Tablet and Mobile
+            }
+
+            // Create grid items for the first 6 unique image IDs
+            for (let i = 0; i < numColumns * 3; i++) {
+                // Fetch image URL
+                const imageUrl = await fetchImageUrls(shuffledImageIds[i]);
+                if (imageUrl) {
+                    // Create a grid item div
+                    const gridItem = document.createElement('div');
+                    gridItem.classList.add('grid-item');
+                    gridItem.style.backgroundImage = `url(${imageUrl})`;
+
+                    // Append the grid item to the grid container
+                    gridContainer.appendChild(gridItem);
+                } else {
+                    // If image URL is not available, create a placeholder grid item
+                    const placeholderItem = document.createElement('div');
+                    placeholderItem.classList.add('grid-item');
+                    placeholderItem.textContent = 'Image Not Available';
+                    gridContainer.appendChild(placeholderItem);
+                }
+            }
+        }
+
+        // Call the function to display images
+        displayImages();
+
+        // Function to change images every 24 seconds
+        setInterval(displayImages, 24000); // 24000 milliseconds = 24 seconds
+
+        // Function to shuffle array elements
+        function shuffleArray(array) {
+            for (let i = array.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [array[i], array[j]] = [array[j], array[i]];
+            }
+            return array;
+        }
+    </script>
+</body>
+</html>

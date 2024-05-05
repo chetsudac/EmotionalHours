@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Home</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emotional Hours</title>
 
     <link rel="stylesheet" type="text/css" href="./reset.css" />
     <link rel="stylesheet" type="text/css" href="./home.css" />
@@ -13,82 +12,122 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Instrument+Serif:ital@0;1&family=Noto+Sans+Thai:wght@100..900&display=swap" rel="stylesheet">
 
-  </head>
-  <body>
-
     <style>
-      /* Style for the fade-in effect */
-      body {
-          opacity: 0;
-          transition: opacity 1s ease-in-out;
-      }
-      /* Style to show the body after the transition */
-      body.fade-in {
-          opacity: 1;
-      }
-  </style>
-  <script>
-      // Listen for the page load event
-      window.addEventListener('load', function() {
-          // Add fade-in class to body to initiate the transition
-          document.body.classList.add('fade-in');
-      });
-  </script>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+        .background-container {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .background-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+        .overlay-content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            width: 100vw;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="background-container">
+        
+        <img class="background-image" id="background-image">
+        
+        <div class="overlay-content"> 
+            
+            <div class="light">
+                <script type="text/javascript">
+                    var pos = document.documentElement;
+                    pos.addEventListener('mousemove', e =>
+                        {pos.style.setProperty('--x',e.
+                        clientX + 'px')
+                        pos.style.setProperty('--y',e.
+                        clientY + 'px')})
+                </script>
+              </div>
 
-<script>
-      function delay(URL) {
-// Add fade-out class to body to initiate the transition
-document.body.classList.add('fade-out');
-// Redirect after the transition duration (1000ms = 1s)
-setTimeout(function() {
-    window.location.href = URL;
-}, 1000); // Adjust this delay if needed
-}
-</script>
+            <style>
+                /* Style for the fade-in effect */
+                body {
+                    opacity: 0;
+                    transition: opacity 1s ease-in-out;
+                }
+                /* Style to show the body after the transition */
+                body.fade-in {
+                    opacity: 1;
+                }
+            </style>
+            <script>
+                // Listen for the page load event
+                window.addEventListener('load', function() {
+                    // Add fade-in class to body to initiate the transition
+                    document.body.classList.add('fade-in');
+                });
+            </script>
+          
+          <script>
+                function delay(URL) {
+          // Add fade-out class to body to initiate the transition
+          document.body.classList.add('fade-out');
+          // Redirect after the transition duration (1000ms = 1s)
+          setTimeout(function() {
+              window.location.href = URL;
+          }, 1000); // Adjust this delay if needed
+          }
+          </script>
+          
+          <audio id="eject" src="./assets/eject.mp3"></audio>
+          <audio id="mix" src="./assets/tape-insert.mp3"></audio>
+          
+              <main>
+                <div class="top-container">
+                  <h4 id=dateTime>clock</h4>
+                  <h4><a href="javascript:delay('./tracklist.html')" onclick="document.getElementById('eject').play()">/ Tracklists</a></h4>
+                  <h4><a href="javascript:delay('./remix.html')" onclick="document.getElementById('mix').play()">/ Mixtape</a></h4>
+                </div>
+                
+                <marquee class="part1"
+            direction="up"
+            width="1450"
+            height="500"
+            behavior="alternate"
+            style="border:solid transparent;">
+            <marquee behavior="alternate">Emotional</marquee>
+          </marquee>
+          
+          <marquee class="part2"
+            direction="down"
+            width="500"
+            height="500"
+            behavior="alternate"
+            style="border:solid transparent;">
+            <marquee behavior="alternate">Hours</marquee>
+          </marquee>
+            
 
-<audio id="eject" src="./assets/eject.mp3"></audio>
-<audio id="mix" src="./assets/tape-insert.mp3"></audio>
-
-    <main>
-      <div class="top-container">
-        <h4 id=dateTime>clock</h4>
-        <h4><a href="javascript:delay('./tracklist.html')" onclick="document.getElementById('eject').play()">/ Tracklists</a></h4>
-        <h4><a href="javascript:delay('./remix.html')" onclick="document.getElementById('mix').play()">/ Mixtape</a></h4>
-      </div>
-      
-      <marquee class="part1"
-  direction="up"
-  width="1450"
-  height="500"
-  behavior="alternate"
-  style="border:solid transparent;">
-  <marquee behavior="alternate">Emotional</marquee>
-</marquee>
-
-<marquee class="part2"
-  direction="down"
-  width="500"
-  height="500"
-  behavior="alternate"
-  style="border:solid transparent;">
-  <marquee behavior="alternate">Hours</marquee>
-</marquee>
-
-      <div class="light">
-        <script type="text/javascript">
-            var pos = document.documentElement;
-            pos.addEventListener('mousemove', e =>
-                {pos.style.setProperty('--x',e.
-                clientX + 'px')
-                pos.style.setProperty('--y',e.
-                clientY + 'px')})
-        </script>
-
-      </div>
-
-
- 
-    </main>
+        </div>
+    </div>
     <script type="text/javascript" src="./home.js" defer></script>
-  </body>
-</html>  
+</body>
+</html>
