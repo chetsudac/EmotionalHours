@@ -1,38 +1,80 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA Images Display</title>
+    <style>
+        .image-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+        .image-item {
+            width: 200px;
+            text-align: center;
+        }
+        .image-item img {
+            max-width: 100%;
+            height: auto;
+        }
+        .image-id {
+            margin-top: 5px;
+            font-size: 12px;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="image-container" id="image-container"></div>
 
-    <title>draft(main)</title>
+    <script>
+        const apiKey = 'eoVXgMJ1VP02Y427y52nkEieKdq6jVtllPm0fWIF';
+        const imageIds = ['iss011e11806', 's62-03248', 's62-03266', 'KSC-20220612-PH-JBS01_0034', 'KSC-2012-3670', 'KSC-2014-3457', 'KSC-20180730-PH_KLS02_0002', 'KSC-20180730-PH_KLS02_0009',
+            'KSC-2014-3456', 'KSC-20191031-PH-GEB01_0003', 'KSC-20191031-PH-GEB01_0002', 'PIA17936', 'KSC-2009-1362', 'KSC-2011-2642', 'KSC-314D-0491_0020', 'KSC-20161215-PH_SWW01_0069',
+            'NHQ202210080001', 'KSC-20200730-PH-KLS01_0001', 'KSC-2012-2382', 'KSC-2012-2404', 'KSC01padig151', 'KSC-2013-2797', 'AFRC2021-0003-18', 'AFRC2018-0287-074', 'AFRC2021-0106-02',
+            'KSC-2010-4566', 'S61-01908'];
 
-    <link rel="stylesheet" type="text/css" href="./reset.css" />
-    <link rel="stylesheet" type="text/css" href="./LayoutDraft.css" />
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Noto+Sans+Thai+Looped:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+        async function fetchImageDetails(imageId) {
+            const apiUrl = `https://images-api.nasa.gov/asset/${imageId}`;
+            try {
+                const response = await fetch(apiUrl);
+                const data = await response.json();
+                return data;
+            } catch (error) {
+                console.error(`Error fetching image details for ID ${imageId}:`, error);
+                return null;
+            }
+        }
 
-  </head>
-  <body>
+        async function displayImages() {
+            const container = document.getElementById('image-container');
+            container.innerHTML = ''; // Clear existing images
 
-    <main>
-      <h4 id=dateTime>clock</h4>
+            for (const imageId of imageIds) {
+                const imageDetails = await fetchImageDetails(imageId);
+                if (imageDetails && imageDetails.collection && imageDetails.collection.items && imageDetails.collection.items.length > 0) {
+                    const imageUrl = imageDetails.collection.items[0].href;
 
-      <div class="slider-container">
-        <input type="range" class="slider" min="1" max="5" value="1" id="rangeSlider">
-    </div>
-    <div class="content">
-        <div id="section1" class="section active">Section 1 Content</div>
-        <div id="section2" class="section">Section 2 Content</div>
-        <div id="section3" class="section">Section 3 Content</div>
-        <div id="section4" class="section">Section 4 Content</div>
-        <div id="section5" class="section">Section 5 Content</div>
-    </div>
-    
- 
-    </main>
+                    const imageItem = document.createElement('div');
+                    imageItem.classList.add('image-item');
 
-    <script type="text/javascript" src="./LayoutDraft.js" defer></script>
-  </body>
-</html>  
+                    const image = document.createElement('img');
+                    image.src = imageUrl;
+                    imageItem.appendChild(image);
+
+                    const imageIdText = document.createElement('div');
+                    imageIdText.classList.add('image-id');
+                    imageIdText.textContent = `NASA ID: ${imageId}`;
+                    imageItem.appendChild(imageIdText);
+
+                    container.appendChild(imageItem);
+                }
+            }
+        }
+
+        displayImages();
+    </script>
+</body>
+</html>
