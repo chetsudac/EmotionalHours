@@ -4,8 +4,7 @@ html {
 }
 
 body {
-  color: black;
-  background-color: white;
+  color: white;
   text-transform: uppercase;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
@@ -25,6 +24,41 @@ body.fade-out {
   opacity: 0;
 }
 
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+.background-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  width: 100vw;
+  height: 100vh;
+  filter: blur(1.5px);
+}
+
 .light{
   position:fixed;
   top: 0px;
@@ -34,7 +68,7 @@ body.fade-out {
   pointer-events: none;
   background: radial-gradient(circle at var(--x) var(--y) , rgb(221, 164, 94) 6%, transparent 60%);
   mix-blend-mode:exclusion;
-  opacity: 30%;
+  opacity: 8%;
 } 
 
 h4 {
@@ -44,6 +78,7 @@ h4 {
   filter: blur(.5px);
   height: 20px;
   font-weight: 600;
+  color: white;
 }
 
 .clock-container {
@@ -106,29 +141,18 @@ h4 {
   width: 50vw;
 }
 
--a {
-  color:#DB7093;
+a {
+  color:white;
   text-decoration: none;
-  filter: blur(1.5px);
-  padding: 50px;
 }
 
--a:visited {color:#DB7093; text-decoration: none;}
+a:visited {color:white; text-decoration: none;}
 
 
--a:hover {
-  border: 2px solid #DB7093;
-  border-radius: 9999px;
+a:hover {
+  text-decoration: overline;
 }
 
--h4 {
-  display: flex;
-  width: 100vw;
-  justify-content: center;
-  position: relative;
-  font-size: 30px;
-  filter: blur(1px);
-}
 
 img {
   display: block;
