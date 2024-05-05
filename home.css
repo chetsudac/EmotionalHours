@@ -181,7 +181,7 @@ img {
     font-size: 30px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding: 100px;
+    padding-top: 300px;
   }
   
   .part2 {
@@ -194,7 +194,7 @@ img {
     font-size: 30px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding: 100px;
+    padding-top: 300px;
   }
 }
 
