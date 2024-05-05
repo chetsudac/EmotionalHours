@@ -178,10 +178,10 @@ img {
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding-top: 300px;
+    padding: 300px;
   }
   
   .part2 {
@@ -191,10 +191,10 @@ img {
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding-top: 300px;
+    padding: 300px;
   }
 }
 
