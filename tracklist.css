@@ -103,8 +103,6 @@ h4 {
 .grid-container {
   padding-top: 10px;
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   height: 100%;
   width: 100vw;
 }
