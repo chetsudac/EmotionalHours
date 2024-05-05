@@ -108,7 +108,7 @@ h4 {
 
 .part1 {
   width: 100vw;
-  height: 300px;
+  height: 400px;
   display:block;
   position: relative;
   font-family: "IBM Plex Sans Thai", sans-serif;
@@ -121,7 +121,7 @@ h4 {
 .part2 {
   display:block;
   width: 100vw;
-  height: 250px;
+  height: 350px;
   position: relative;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
@@ -178,7 +178,7 @@ img {
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     filter: blur(1.5px);
   }
@@ -190,7 +190,7 @@ img {
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 900;
     filter: blur(1.5px);
   }
