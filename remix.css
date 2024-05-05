@@ -25,13 +25,26 @@ body {
     mix-blend-mode:exclusion;
   }
 
- h4 {
+  a {
+    color:white;
+    text-decoration: none;
+  }
+  
+  a:visited {color:white; text-decoration: none;}
+  
+  
+  a:hover {
+    text-decoration: overline;
+  }
+  
+  h4 {
     display: flex;
     position: relative;
-    font-size: 20px;
-    filter: blur(.5px);
+    font-size: 22px;
+    filter: blur(1px);
     height: 20px;
     font-weight: 600;
+    color: white;
   }
 
   .clock-container {

@@ -56,7 +56,6 @@ body, html {
   font-weight: bold;
   width: 100vw;
   height: 100vh;
-  filter: blur(1.5px);
 }
 
 .light{
@@ -74,8 +73,8 @@ body, html {
 h4 {
   display: flex;
   position: relative;
-  font-size: 20px;
-  filter: blur(.5px);
+  font-size: 22px;
+  filter: blur(1px);
   height: 20px;
   font-weight: 600;
   color: white;
@@ -114,8 +113,9 @@ h4 {
   position: relative;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 900;
+  filter: blur(1.5px);
 }
 
 .part2 {
@@ -125,8 +125,9 @@ h4 {
   position: relative;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
-  font-size: 60px;
+  font-size: 70px;
   font-weight: 900;
+  filter: blur(1.5px);
 }
 
 .part1:hover, .part2:hover {
