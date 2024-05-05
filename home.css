@@ -159,3 +159,17 @@ img {
   display: block;
   max-width: 100%;
 }
+
+@media (min-width: 768px) {
+
+}
+
+/* Tablet layout */
+@media (max-width: 767px) {
+
+}
+
+/* Mobile layout */
+@media (max-width: 480px) {
+
+}
