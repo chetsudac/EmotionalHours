@@ -67,7 +67,7 @@ body, html {
   pointer-events: none;
   background: radial-gradient(circle at var(--x) var(--y) , rgb(221, 164, 94) 6%, transparent 60%);
   mix-blend-mode:exclusion;
-  opacity: 8%;
+  opacity: 15%;
 } 
 
 h4 {
