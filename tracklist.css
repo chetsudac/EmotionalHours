@@ -148,7 +148,7 @@ scrollbar-width: none;
 }
 
 #hour-1 {
-  background: linear-gradient(rgb(101, 150, 240), #f4e7d7);
+  background: linear-gradient(rgb(64, 121, 227), #f4e7d7);
 }
 
 #hour-2 {
@@ -156,12 +156,28 @@ scrollbar-width: none;
 }
 
 #hour-3 {
-  background: linear-gradient(#070f46, #2f314a);
+  background: linear-gradient(#060b2b, #525473);
 }
 
 #hour-4 {
-  background: linear-gradient(#171429, #2f3146);
+  background: linear-gradient(#0e1125, #5c5d63);
 }
+
+#three {
+ color: #5c5d63;
+}
+
+#twelve {
+  color: #64689b;
+}
+
+#four {
+  color: #b79179;
+}
+
+#ten {
+  color: #f4e7d7;
+}  
 
 @media (min-width: 768px) {
 
