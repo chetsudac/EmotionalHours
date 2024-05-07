@@ -207,15 +207,13 @@ img {
     display: inline;
     margin-top: 0;
     font-size: 22px;
-    padding-left: 22px;
-    padding-right: 22px;
-
+    padding: 22px;
   }
   
   .top-container {
     display: inline-block;
     width: 100vw;
-    margin-top: 15px;
+    margin-top: 10px;
   }
 
   #dateTime {
