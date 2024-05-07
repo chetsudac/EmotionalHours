@@ -247,7 +247,8 @@ scrollbar-width: none;
     display: inline;
     margin-top: 0;
     font-size: 18px;
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 
   }
   
@@ -255,11 +256,14 @@ scrollbar-width: none;
     display: inline-block;
     width: 100vw;
     margin-top: 10px;
+    justify-items: center;
+    margin-left: 4vw;
   }
 
   #dateTime {
     width: 100vw;
     display: inline;
+    position: relative;
   }
 }
 

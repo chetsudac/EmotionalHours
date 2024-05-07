@@ -206,19 +206,24 @@ img {
     display: inline;
     margin-top: 0;
     font-size: 18px;
-    padding: 22px;
+    padding-left: 23px;
+    padding-right: 23px;
+
   }
   
   .top-container {
     display: inline-block;
     width: 100vw;
     margin-top: 10px;
+    justify-items: center;
   }
 
   #dateTime {
     width: 100vw;
     display: inline;
+    position: relative;
   }
-  
 }
+  
+
 
