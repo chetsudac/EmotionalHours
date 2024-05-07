@@ -1,9 +1,4 @@
-html {
-  margin: 0;
-  animation: bgColor-changed 15000ms linear infinite;
-}
-
-body {
+html,body {
   color: white;
   text-transform: uppercase;
   font-family: "IBM Plex Sans Thai", sans-serif;
@@ -39,7 +34,7 @@ body, html {
   align-items: center;
 }
 .background-image {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -60,6 +55,7 @@ body, html {
   left: 0;
   margin: 0;
   padding: 0;
+  overflow: hidden;
 }
 
 .light{
@@ -113,7 +109,7 @@ h4 {
 .part2 {
   display:block;
   width: 100vw;
-  height: 350px;
+  height: 300px;
   position: relative;
   font-family: "IBM Plex Sans Thai", sans-serif;
   font-style: normal;
