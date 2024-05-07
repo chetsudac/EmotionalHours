@@ -193,32 +193,33 @@ img {
   }
 
   h4 {
-    display:flex;
-    flex-wrap: wrap;
     position: relative;
-    font-size: 28px;
+    font-size: 33px;
     filter: blur(1px);
-    line-height: 5px;
     font-weight: 600;
     color: white;
+    height: 10px;
   }
 
-  a {
-    width: 50vw;
-    display: flex;
+  #tabs {
+    width: 100vw;
+    display: inline;
+    margin-top: 0;
+    font-size: 22px;
+    padding-left: 22px;
+    padding-right: 22px;
+
   }
   
   .top-container {
-    display: flex;
-    flex-direction: column;
+    display: inline-block;
     width: 100vw;
-    margin-bottom: 5vh;
+    margin-top: 15px;
   }
 
   #dateTime {
-    padding-top: 8px;
     width: 100vw;
-    display: grid;
+    display: inline;
   }
   
 }
