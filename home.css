@@ -226,6 +226,11 @@ img {
     display: inline;
     position: relative;
   }
+
+  img {
+    display: block;
+    max-height: 100%;
+  }
 }
   
 
