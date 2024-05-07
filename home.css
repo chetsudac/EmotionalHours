@@ -197,5 +197,9 @@ img {
     filter: blur(1.5px);
     padding: 100px;
   }
+
+  .light {
+    display: none;
+  }
 }
 
