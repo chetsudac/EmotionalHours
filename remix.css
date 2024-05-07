@@ -238,25 +238,25 @@ button {
 
 @keyframes blinker-1 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 115%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-2 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 115%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-3 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 115%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-4 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 115%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
