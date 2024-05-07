@@ -162,7 +162,7 @@ img {
   .part1 {
     width: 100vw;
     margin-top: 10px;
-    height: 40vh;
+    height: 30vh;
     display:block;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
@@ -171,6 +171,7 @@ img {
     font-weight: 900;
     filter: blur(1.5px);
     padding: 50px;
+    padding-top: 0px;
     margin-top: 0;
   }
   
