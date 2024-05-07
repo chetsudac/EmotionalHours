@@ -1,3 +1,5 @@
+alert("Welcome to Emotional Hours! Get ready to dive into beautifully crafted song lyrics sorted by the time of day they fit best. Experience a fun rotation of NASA images on our home page. Explore and uncover lyrics that resonate with each moment. And don't forget to check out our Remix page, where the background changes with the colors of the sky, adding a bit of charm to your visit. Feel free to swing by at different times for a new vibe each time!");
+
 options = {
     year: 'numeric', month: 'numeric', day: 'numeric',
     hour: 'numeric', minute: 'numeric', second: 'numeric'
