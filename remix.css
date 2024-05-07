@@ -148,22 +148,40 @@ button {
 /* Mobile layout */
 @media (max-width: 480px) {
 
-  .light {
-    display: none;
+  h4 {
+    position: relative;
+    font-size: 33px;
+    filter: blur(1px);
+    font-weight: 600;
+    color: white;
+  }
+
+  #tabs {
+    width: 100vw;
+    display: inline;
+    margin-top: 0;
+    font-size: 18px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
   
   .top-container {
-    display: inline-flex;
-    position: relative;
+    display: inline-block;
     width: 100vw;
-    justify-content: space-between;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    height: auto;
-    height: 25px;
-    margin-bottom: 5vh;
+    margin-top: 10px;
+    justify-items: center;
+    margin-left: 5vw;
   }
-  
+
+  #dateTime {
+    width: 100vw;
+    display: inline;
+    position: relative;
+  }
+
+  .light {
+    display: none;
+  }
 
   .random-data {
     display: flex;
@@ -226,4 +244,5 @@ button {
 }
   
 }
+
 
