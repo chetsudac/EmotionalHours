@@ -218,26 +218,50 @@ button {
   }
 
   #random-data1 {
-    animation: blinker 4s linear infinite;
+    animation: blinker-1 4s linear infinite;
 }
 
 #random-data2 {
-  animation: blinker 6s linear infinite;
+  animation: blinker-2 6s linear infinite;
 }
 
 #random-data3 {
-  animation: blinker 5s linear infinite;
+  animation: blinker-3 5s linear infinite;
 }
 
 #random-data4 {
-  animation: blinker 5.5s linear infinite;
+  animation: blinker-4 5.5s linear infinite;
 }
 
 #random-data5 {
-  animation: blinker 4.5s linear infinite;
+  animation: blinker-5 4.5s linear infinite;
 }
 
-@keyframes blinker {
+@keyframes blinker-1 {
+  0% { font-size: 100%; opacity: 1; filter: blur(0px)}
+  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
+
+@keyframes blinker-2 {
+  0% { font-size: 100%; opacity: 1; filter: blur(0px)}
+  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
+
+@keyframes blinker-3 {
+  0% { font-size: 100%; opacity: 1; filter: blur(0px)}
+  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
+
+@keyframes blinker-4 {
+  0% { font-size: 100%; opacity: 1; filter: blur(0px)}
+  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
+
+@keyframes blinker-5 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
   50% { font-size: 120%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
