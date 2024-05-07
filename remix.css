@@ -64,8 +64,8 @@ body, html {
     width: 100vw;
     height: 15vh;
     justify-content: center;
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 20vw;
+    padding-right: 20vw;
     position: relative;
     filter: blur(.5px);
 
@@ -78,9 +78,8 @@ body, html {
 
 
 .data-container {
-    width: 40vw;
     text-align: right;
-    margin-top: 20px;
+    margin-top: 30px;
   }
 
 #random-data1, #random-data3, #random-data5 {
