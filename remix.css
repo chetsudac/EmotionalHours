@@ -47,18 +47,6 @@ body {
     color: white;
   }
 
-  .clock-container {
-    display: flex;
-    position: relative;
-    width: 100vw;
-    justify-content: center;
-    padding-left: 3vw;
-    padding-right: 3vw;
-    height: auto;
-    height: 25px;
-    margin-bottom: 15px;
-  }
-
   .top-container {
     display: inline-flex;
     position: relative;
@@ -159,59 +147,83 @@ button {
 
 /* Mobile layout */
 @media (max-width: 480px) {
+
   .light {
     display: none;
   }
   
-  .grid-container {
-    padding-top: 20px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
+  .top-container {
+    display: inline-flex;
+    position: relative;
     width: 100vw;
-    filter: blur(.8px);
+    justify-content: space-between;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    height: auto;
+    height: 25px;
+    margin-bottom: 5vh;
   }
+  
 
-  .lyrics {
-    padding: px;
-    border-radius: 2px;
-    line-height: 24px;
-    font-size: 16px;
-    text-align: left;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-style: italic;
-  }
-
-  .tracks {
+  .random-data {
     display: flex;
-    line-height: 10px;
-    justify-content:space-between;
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-left: 50px;
-  }
-
-  .grid-item {
-    height: 18vh;
-    overflow: auto;
-    display: inline;
-    align-items: center;
+    width: 100vw;
+    height: 15vh;
     justify-content: center;
-    margin: 5px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    position: relative;
+    filter: blur(.5px);
+
+    font-family: "IBM Plex Sans Thai", sans-serif;
+    font-style: normal;
+    line-height: 50px;
+    font-weight: 300;
   }
 
-  .hours {
-    line-height: 60px;
-    text-align: center;
-    border-radius: 2.5px;
-    margin: 10px;
-    margin-top: 80px;
-    letter-spacing: 3px;
-    font-size: 38px;
-    box-shadow: 0px 0px 0px 8.5px rgba(255, 255, 255, 0.3); 
-    font-weight: 800;
+
+.data-container {
+  margin-top: 5vh;
   }
+
+#random-data1, #random-data3, #random-data5 {
+    text-align: left;
+    justify-content: left;
+  }
+
+  h2 {
+    display: block;
+    width: 100vw;
+    position: relative;
+    font-weight: 600;
+    filter: blur(.5px);
+  }
+
+  #random-data1 {
+    animation: blinker 4s linear infinite;
+}
+
+#random-data2 {
+  animation: blinker 6s linear infinite;
+}
+
+#random-data3 {
+  animation: blinker 5s linear infinite;
+}
+
+#random-data4 {
+  animation: blinker 5.5s linear infinite;
+}
+
+#random-data5 {
+  animation: blinker 4.5s linear infinite;
+}
+
+@keyframes blinker {
+  0% { font-size: 100%; opacity: 1; filter: blur(0px)}
+  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
+  
 }
 
