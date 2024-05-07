@@ -48,3 +48,5 @@ options = {
 
     // Initial display of a random image
     displayRandomImage();
+
+    
