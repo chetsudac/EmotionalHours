@@ -6,7 +6,12 @@ options = {
   clock()
   setInterval(clock, 1000);
   
-  alert("Welcome to Emotional Hours! Get ready to dive into beautifully crafted song lyrics sorted by the time of day they fit best. Experience a fun rotation of NASA images on our home page. Explore and uncover lyrics that resonate with each moment. And don't forget to check out our Remix page, where the background changes with the colors of the sky, adding a bit of charm to your visit. Feel free to swing by at different times for a new vibe each time!");
+  function showAlert() {
+    alert("Welcome to Emotional Hours! Get ready to dive into beautifully crafted song lyrics sorted by the time of day they fit best. Experience a fun rotation of NASA images on our home page. Explore and uncover lyrics that resonate with each moment. And don't forget to check out our Remix page, where the background changes with the colors of the sky, adding a bit of charm to your visit. Feel free to swing by at different times for a new vibe each time!");
+}
+
+// Call the showAlert() function when the page finishes loading
+window.onload = showAlert;
     // Your NASA API key
     const apiKey = 'eoVXgMJ1VP02Y427y52nkEieKdq6jVtllPm0fWIF';
 
