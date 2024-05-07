@@ -240,15 +240,14 @@ scrollbar-width: none;
     filter: blur(1px);
     font-weight: 600;
     color: white;
-    height: 10px;
   }
 
   #tabs {
     width: 100vw;
     display: inline;
     margin-top: 0;
-    font-size: 22px;
-    padding: 40px;
+    font-size: 18px;
+    padding: 50px;
 
   }
   
