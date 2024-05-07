@@ -12,15 +12,23 @@ const light = document.querySelector('light');
 const date = new Date();
 const hour = date.getHours();
 
-if (hour < 12) {
-  body.style.backgroundColor = 'lightblue';
+if (hour < 7) {
+  body.style.background = "linear-gradient(to bottom, #495EA8, #FFD1C6)";
+} else if (hour < 10) {
+  body.style.background = "linear-gradient(to bottom, #5E99FF, #FDAD65)";
+} else if (hour < 13) {
+    body.style.background = "linear-gradient(to bottom, #80ABFF, #FFE4CB)";
 } else if (hour < 16) {
-  body.style.background = "linear-gradient(to bottom, #7890E4, #E78840)";
+    body.style.background = "linear-gradient(to bottom, #496DEF, #FFE5BE)";
+} else if (hour < 19) {
+    body.style.background = "linear-gradient(to bottom, #2C4291, #B97A56)";
 } else if (hour < 22) {
-    body.style.background = "linear-gradient(to bottom, #040918, #93B6CC)";
-} else {
-  body.style.background = "linear-gradient(to bottom, #11114D, #FFAD62)";
-}
+    body.style.background = "linear-gradient(to bottom, #16224E, #835030)";
+} else if (hour < 1) {
+  body.style.background = "linear-gradient(to bottom, #060B2B, #525473)";
+} else if (hour < 4) {
+    body.style.background = "linear-gradient(to bottom, #0E1125, #3D3D3F)";
+  }
 
 // JSON data file URL
 const jsonDataUrl = 'data.json';

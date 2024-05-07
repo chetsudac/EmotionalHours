@@ -303,6 +303,17 @@ setTimeout(function() {
       
     </main>
 
+    <div class="light">
+      <script type="text/javascript">
+          var pos = document.documentElement;
+          pos.addEventListener('mousemove', e =>
+              {pos.style.setProperty('--x',e.
+              clientX + 'px')
+              pos.style.setProperty('--y',e.
+              clientY + 'px')})
+      </script>
+    </div>
+
     <script type="text/javascript" src="./tracklist.js" defer></script>
   </body>
 </html>  
