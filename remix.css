@@ -1,17 +1,16 @@
-html {
-    margin: 0;
-    animation: bgColor-changed 15000ms linear infinite;
-}
-
-body {
-    color: white;
-    text-transform: uppercase;
-    font-family: "IBM Plex Sans Thai", sans-serif;
-    font-style: normal;
-    font-size: 20px;
-    height: 100vh;
-    margin: 0;
-    padding: 0;
+body, html {
+  color: white;
+  background-color: black;
+  text-transform: uppercase;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-size: 20px;
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+  font-weight: 400;
 }
  
 .light{
@@ -170,7 +169,7 @@ button {
     width: 100vw;
     margin-top: 10px;
     justify-items: center;
-    margin-left: 5vw;
+    margin-left: 4vw;
   }
 
   #dateTime {
@@ -186,16 +185,16 @@ button {
   .random-data {
     display: flex;
     width: 100vw;
-    height: 15vh;
+    height: 12vh;
     justify-content: center;
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 8vw;
+    padding-right: 8vw;
     position: relative;
     filter: blur(.5px);
-
+    font-size: 25px;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    line-height: 50px;
+    line-height: 30px;
     font-weight: 300;
   }
 
@@ -239,32 +238,41 @@ button {
 
 @keyframes blinker-1 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-2 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-3 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-4 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
 }
 
 @keyframes blinker-5 {
   0% { font-size: 100%; opacity: 1; filter: blur(0px)}
-  50% { font-size: 120%; opacity: .3; filter: blur(1px)}
+  50% { font-size: 110%; opacity: .3; filter: blur(1px)}
   100% { font-size: 100%; opacity: 1; filter: blur(0px)}
+}
+
+button {
+  margin:auto;
+  margin-top: 100px;
+  font-family: "IBM Plex Sans Thai", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  filter: blur(.5px);
 }
   
 }
