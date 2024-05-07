@@ -162,7 +162,7 @@ img {
   .part1 {
     width: 100vw;
     margin-top: 10px;
-    height: 30vh;
+    height: 40vh;
     display:block;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
@@ -170,8 +170,8 @@ img {
     font-size: 18px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding: 50px;
-    padding-top: 0px;
+    padding: 30px;
+    padding-top: 10px;
     margin-top: 0;
   }
   
@@ -197,23 +197,25 @@ img {
   h4 {
     display: flex;
     position: relative;
-    font-size: 22px;
+    font-size: 30px;
     filter: blur(1px);
-    height: 20px;
+    line-height: 5px;
     font-weight: 600;
     color: white;
   }
   
   .top-container {
-    display: inline-flex;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     width: 100vw;
     justify-content: space-between;
-    padding-left: 3vw;
     padding-right: 3vw;
-    height: auto;
-    height: 25px;
     margin-bottom: 5vh;
+  }
+
+  #dateTime {
+    width: 100vw;
+    display: grid;
   }
   
 }
