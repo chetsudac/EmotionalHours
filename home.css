@@ -173,7 +173,7 @@ img {
 @media (max-width: 480px) {
   .part1 {
     width: 100vw;
-    margin-top: 250px;
+    margin-top: 50px;
     height: 40vh;
     display:block;
     position: relative;
