@@ -220,12 +220,6 @@ img {
   #dateTime {
     width: 100vw;
     display: inline;
-    position: relative;
-  }
-
-  img {
-    display: block;
-    max-height: 100%;
   }
 }
   
