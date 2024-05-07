@@ -160,14 +160,14 @@ img {
 /* Mobile layout */
 @media (max-width: 480px) {
   .part1 {
-    width: 100vw;
+    width: 400px;
+    height: 320px;
     margin-top: 10px;
-    height: 40vh;
     display:block;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 900;
     filter: blur(1.5px);
     padding: 30px;
@@ -176,12 +176,12 @@ img {
   
   .part2 {
     display:block;
-    width: 100vw;
-    height: 20vh;
+    width: 400px;
+    height: 300px;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
-    font-size: 18px;
+    font-size: 40px;
     font-weight: 900;
     filter: blur(1.5px);
     margin-top: 10px;
