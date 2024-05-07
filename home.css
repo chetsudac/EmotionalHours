@@ -174,7 +174,7 @@ img {
   .part1 {
     width: 100vw;
     margin-top: 250px;
-    height: 50vh;
+    height: 40vh;
     display:block;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
@@ -182,20 +182,20 @@ img {
     font-size: 18px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding: 100px;
+    padding: 50px;
   }
   
   .part2 {
     display:block;
     width: 100vw;
-    height: 40vh;
+    height: 35vh;
     position: relative;
     font-family: "IBM Plex Sans Thai", sans-serif;
     font-style: normal;
     font-size: 18px;
     font-weight: 900;
     filter: blur(1.5px);
-    padding: 100px;
+    padding: 50px;
   }
 
   .light {
