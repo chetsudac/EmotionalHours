@@ -183,13 +183,13 @@ scrollbar-width: none;
   }
 
   .grid-container {
-    padding-top: 20px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
     height: 100%;
     width: 100vw;
     filter: blur(.8px);
+   padding-top: 0;
   }
 
   .lyrics {
@@ -213,21 +213,22 @@ scrollbar-width: none;
   }
 
   .grid-item {
-    height: 18vh;
+    height: 16vh;
     overflow: auto;
     display: inline;
     align-items: center;
     justify-content: center;
-    margin: 5px;
+    margin-left: 6px;
+    margin-right: 6px;
   }
 
   .hours {
     line-height: 60px;
     text-align: center;
     border-radius: 2.5px;
-    margin: 20px;
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin: 40px;
+    margin-top: 20px;
+    margin-bottom: 60px;
     letter-spacing: 3px;
     font-size: 38px;
     box-shadow: 0px 0px 0px 8.5px rgba(255, 255, 255, 0.3); 
@@ -249,7 +250,6 @@ scrollbar-width: none;
     font-size: 18px;
     padding-left: 50px;
     padding-right: 50px;
-
   }
   
   .top-container {
@@ -257,7 +257,7 @@ scrollbar-width: none;
     width: 100vw;
     margin-top: 10px;
     justify-items: center;
-    margin-left: 4vw;
+    margin-left: 5vw;
   }
 
   #dateTime {
