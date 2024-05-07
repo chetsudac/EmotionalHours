@@ -80,6 +80,7 @@ body, html {
 .data-container {
     width: 40vw;
     text-align: right;
+    margin-top: 20px;
   }
 
 #random-data1, #random-data3, #random-data5 {
